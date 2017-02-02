@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23A74EA4-9676-4366-8C57-8B153CF5C3F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>luxintao</RootNamespace>
+    <AssemblyName>luxintao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lxt_form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lxt_form1.Designer.cs">
+      <DependentUpon>lxt_form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LXT_SetGradient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LXT_SetGradient_Form.Designer.cs">
+      <DependentUpon>LXT_SetGradient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LXT_sethatch_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LXT_sethatch_form.Designer.cs">
+      <DependentUpon>LXT_sethatch_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lxt_setsize_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lxt_setsize_form.Designer.cs">
+      <DependentUpon>lxt_setsize_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolUtils.cs" />
+    <EmbeddedResource Include="lxt_form1.resx">
+      <DependentUpon>lxt_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LXT_SetGradient_Form.resx">
+      <DependentUpon>LXT_SetGradient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LXT_sethatch_form.resx">
+      <DependentUpon>LXT_sethatch_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lxt_setsize_form.resx">
+      <DependentUpon>lxt_setsize_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asserts\icon\cancel.png" />
+    <Content Include="asserts\icon\color.png" />
+    <Content Include="asserts\icon\CreateReportBlankReport.png" />
+    <Content Include="asserts\icon\DashDot.png" />
+    <Content Include="asserts\icon\DashDotDot.png" />
+    <Content Include="asserts\icon\degree.png" />
+    <Content Include="asserts\icon\Dot.png" />
+    <Content Include="asserts\icon\duobianxing_empty.png" />
+    <Content Include="asserts\icon\duobianxing_full.png" />
+    <Content Include="asserts\icon\HorizontalSpacingIncrease.png" />
+    <Content Include="asserts\icon\InkingStart.png" />
+    <Content Include="asserts\icon\masaike.png" />
+    <Content Include="asserts\icon\OpenInBrowserOutlook.png" />
+    <Content Include="asserts\icon\overcover.png" />
+    <Content Include="asserts\icon\quxian.png" />
+    <Content Include="asserts\icon\rec_empty.bmp" />
+    <Content Include="asserts\icon\rec_full.bmp" />
+    <Content Include="asserts\icon\redrec.png" />
+    <Content Include="asserts\icon\SaveAndClose.png" />
+    <Content Include="asserts\icon\SizeToControlHeightAndWidth.png" />
+    <Content Include="asserts\icon\Solid.png" />
+    <Content Include="asserts\icon\straight_line.bmp" />
+    <Content Include="asserts\icon\tuoyuan.png" />
+    <Content Include="asserts\icon\tuoyuan_full.bmp" />
+    <Content Include="asserts\icon\VerticalSpacingIncrease.png" />
+    <Content Include="asserts\icon\zhexian.bmp" />
+    <Content Include="asserts\icon\ziti.bmp" />
+    <Content Include="asserts\icon\ZoomIn.png" />
+    <Content Include="asserts\icon\ZoomOut.png" />
+    <Content Include="asserts\icon\_3DTiltLeftClassic.png" />
+    <Content Include="asserts\icon\_3DTiltRightClassic.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
